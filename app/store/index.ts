@@ -1,6 +1,6 @@
 import { proxy, useSnapshot } from "valtio";
 
-type Status = "pending" | "completed";
+export type Status = "pending" | "completed";
 type Filter = Status | "all";
 type Todo = {
   id: number;
