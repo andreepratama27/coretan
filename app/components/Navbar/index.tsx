@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from 'next/image'
+import UserIcon from 'public/user.svg'
 
 export default function Navbar() {
   return (
@@ -12,7 +14,9 @@ export default function Navbar() {
           <ul>
             <li>
               <p className="text-gray-400">
-                <Link href="/account">Account</Link>
+                <Link href="/account">
+                  <Image src={UserIcon} alt="User Icon" className="w-6 h-6" />
+                </Link>
               </p>
             </li>
           </ul>
